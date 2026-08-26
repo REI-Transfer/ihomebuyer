@@ -350,6 +350,8 @@ export function ZeroDistractionForm({ accentColor, serviceAreas, disqualifiedPro
         lead_score_breakdown: score.breakdown,
 
         event_id: eventID,
+        meta_event_id: eventID,
+        meta_event_name: qualified ? "Lead" : "LeadLowIntent",
         qualified,
 
         utm_source:   tracking.utm_source   ?? "",
